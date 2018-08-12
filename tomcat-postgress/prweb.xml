@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+
+<!-- PostgreSQL 9.4 -->
+<Resource name="jdbc/PegaRULES"
+  auth="Container"
+  type="javax.sql.DataSource"
+  driverClassName="org.postgresql.Driver"
+  url="jdbc:postgresql://db:5432/pega"
+  username="postgres"
+  password="postgres"
+  maxActive="100"
+  maxIdle="30"
+  maxWait="10000"/>
+
+<Environment name="prconfig/database/databases/PegaRULES/defaultSchema" value="prpcrules"
+type="java.lang.String" />
+
+<Environment name="prconfig/database/databases/PegaDATA/defaultSchema" value="prpcdata"
+type="java.lang.String" />
+
+</Context>
